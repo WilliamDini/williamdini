@@ -9,13 +9,29 @@
         <title>William Dang Portfolio</title>
 
         <!-- LINK -->
-        <link rel='stylesheet' type='text/css' href='..src/style.css'>
+        <link rel='stylesheet' type='text/css' href='../williamdini/src/style.css'>
     </head>
     <body>
 
 
+        <!-- Contact Form -->
+        <div class="form-container">
+            <form>
+                <h2><strong>Contact Me</strong></h2>
+                <label for="name"><b>Name:</b>
+                    <input class="inline" required type="text" id="name" name="name" placeholder="Enter your Name...">
+                </label>
 
+                <label for="email"> <b>Email:</b>
+                    <input class="inline" required type="email" id="email" name="email" placeholder="Enter your Email...">
+                </label> 
 
+                <label for="message"> <b>Send me a Message:</b>
+                <textarea class="inline" required id="message" name="message"></textarea>
+                </label>
+                <button class="subButn" type="submit">Submit</button>
+            </form>
+        </div>
         
     </body>
 </html>
