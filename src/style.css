@@ -1,61 +1,86 @@
 .form-container {
     text-align: center;
-    background-color: #F9E4BC;
-    width: 280px;
+    background-color: #030D33;
+    width: 1000px;
     padding: 10px;
+    height: 500px;
     border-radius: 10px;
-    box-shadow: 1px 4px 8px white;
-}
-
-h2 {
-    font-size: 35px;
+    box-shadow: 0px 0px 20px white;
     font-family: "Copperplate", "Lucida Console";
+
+    display: flex;
+    gap: 20px;
+
+    /* height: 100vh;    */
 }
 
-.inline {
-    display: block;
-    margin: 5px auto 15px;
+.form-container  p {
+    font-size: 20px;
+    color: white;
 }
+
+.form-container  h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.info-text-box,
+.input-form {
+    flex: 1;
+}
+
+/* .inline {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px auto 15px;
+} */
 
 #message {
     min-width: fit-content;
     max-width: fit-content;
 }
 
-input, textarea {
-    width: 175px;
-    padding: 3.5px;
+.form-container  input, 
+.form-container textarea {
+    width: 215px;
+    padding: 5px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
 
 }
 
-button {
-    background-color: forestgreen;
+.form-container  button {
+    background-color: royalblue;
     font-size: 15px;
     border-radius: 4px;
     border: none;
+    margin-top: 10px;
+    width: 90px;
     padding: 5px 10px;
-    color: aliceblue;
+    color: white;
 }
 
 button:hover {
-    background-color: green;
+    background-color: blue;
 }
 
 body {
-    background-color:rgb(67, 67, 67);
+    background-color:#010018;
 
     /* Modern Method to Center a Div! IMPORTANT */
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
-    height: 100vh;   
+    justify-content: center;
+    align-items: center;
 }
 
 label {
     margin: auto;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: left;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 15px;
 }
